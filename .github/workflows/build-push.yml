@@ -22,5 +22,5 @@ jobs:
           distribution: 'temurin'
       
       - name: Build and test project
-        run: mvn -B package --file pom.xml
+        run: mvn -B package --file inject_demo/pom.xml
 
