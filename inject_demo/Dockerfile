@@ -6,5 +6,5 @@ COPY --chown=185 target/*.jar /deployments/
 
 EXPOSE 8080
 
-ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
+ENV JAVA_APP_JAR="/deployments/*.jar"
 
