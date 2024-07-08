@@ -42,4 +42,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/pipeline_test:latest
+          tags: ghcr.io/juma2311/pipeline_test
