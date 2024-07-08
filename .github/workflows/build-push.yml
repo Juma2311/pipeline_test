@@ -24,3 +24,17 @@ jobs:
       - name: Build and test project
         run: mvn -B package --file inject_demo/pom.xml
 
+      - name: Login to Docker Hub
+        uses: docker/login-actions@v3
+        with:
+          username: julianmangel
+          password: 0U>S6diGJ+*+'jMkt)t#
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-actions@v3
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: julianmangel/clockbox:latest
