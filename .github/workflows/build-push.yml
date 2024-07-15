@@ -51,7 +51,6 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      steps:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
